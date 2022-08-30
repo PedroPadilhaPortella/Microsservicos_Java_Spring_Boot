@@ -124,6 +124,7 @@ docker images
 Criar/rodar um container de uma imagem
 ```
 docker run -p <porta-externa>:<porta-interna> --name <nome-do-container> --network <nome-da-rede> <nome-da-imagem:tag> 
+docker start <container-id>
 ```
 Listar containers
 ```
@@ -133,4 +134,8 @@ docker ps -a
 Acompanhar logs do container em execução
 ```
 docker logs -f <container-id>
+```
+Remover um container ou imagem
+```
+docker rmi <container-id>
 ```
